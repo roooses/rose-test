@@ -1,0 +1,43 @@
+[
+  {
+    "blockName": "文本编辑",
+    "settings": {
+      "text": {
+        "type": "vue-editor",
+        "require": true,
+        "label": "文案",
+        "toolBar": [
+          [{ "header": [false, 1, 2, 3, 4, 5, 6 ] }],
+          [{ "color": [] }],
+          [{"align": ""},{"align": "center"}, {"align": "right"}],
+          ["bold", "italic", "underline"]
+        ]
+      },
+      "container.fontSize": {
+        "type": "nb-input",
+        "label": "字体大小",
+        "require": false
+      },
+      "container.paddingTop": {
+        "type": "nb-input",
+        "label": "上边距",
+        "require": false
+      },
+      "container.paddingBottom": {
+        "type": "nb-input",
+        "label": "下边距",
+        "require": false
+      },
+      "container.paddingLeft": {
+        "type": "nb-input",
+        "label": "左边距",
+        "require": false
+      },
+      "container.paddingRight": {
+        "type": "nb-input",
+        "label": "右边距",
+        "require": false
+      }
+    }
+  }
+]

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html style="font-size: 37.5px">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>luban-button</title>
+</head>
+<style>
+  html,body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+<script src="../node_modules/vue/dist/vue.runtime.min.js"></script>
+<script src="../build/0.0.1/LText.js"></script>
+<script>
+  Vue.use(LText)
+  new Vue({
+    el: '#app',
+    data: {
+      name: 'test',
+      data: {
+        "text":"hello worlds",
+        "style":{
+          "container":{
+            "fontSize": "16px",
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0
+          }
+        }
+      }
+    },
+    render (h) {
+      // todo 这里可以根据渲染结果遍历加载所需组件
+      return h('LText', {
+        props: {
+          data: this.data
+        }
+      })
+    }
+  })
+</script>
+</html>
